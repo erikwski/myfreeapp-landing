@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/inter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TitanOne';
+    src: url('../../assets/fonts/titanOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'TitanOne', sans-serif;
+}
+
+.titan-font {
+    font-family: 'TitanOne', sans-serif;
+}
