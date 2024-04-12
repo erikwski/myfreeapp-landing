@@ -1,5 +1,6 @@
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   ElementRef,
   HostListener,
@@ -12,10 +13,10 @@ import {
   imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent implements AfterViewInit {
   @ViewChild('header', { static: true }) header!: ElementRef;
-
   ngAfterViewInit(): void {
     this.onWindowScroll();
   }

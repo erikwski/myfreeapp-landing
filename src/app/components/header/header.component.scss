@@ -1,25 +1,26 @@
 @import "../../styles/variables";
 
 nav {
-    @apply py-2 px-6 rounded-3xl font-bold;
 
     a {
         @apply p-2 ease-in duration-300 select-none cursor-pointer rounded-xl min-w-[100px] text-center;
 
-        &:hover {
-            background: $primary-200;
-            color: $background;
-            box-shadow: inset 0px 0px 3px 1px $background;
-        }
+        &:not(#logo-mobile) {
+            &:hover {
+                background: $primary-200;
+                color: $background;
+                box-shadow: inset 0px 0px 3px 1px $background;
+            }
 
-        &:active {
-            background: $primary-400;
-            box-shadow: inset 0px 0px 5px 2px $background;
-        }
+            &:active {
+                background: $primary-400;
+                box-shadow: inset 0px 0px 5px 2px $background;
+            }
 
-        &.active {
-            background: $primary;
-            color: $background;
+            &.active {
+                background: $primary;
+                color: $background;
+            }
         }
 
     }
@@ -27,4 +28,29 @@ nav {
 
 #logo.active {
     transform: scale(1.35);
+}
+
+
+#logo-mobile {
+    display: none;
+    min-width: auto;
+
+    &.active {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #logo {
+        display: none;
+    }
+
+    #logo-mobile {
+        display: flex;
+    }
+
+    nav a:not(#logo-mobile) {
+        @apply min-w-[75px] p-1 text-sm;
+
+    }
 }
