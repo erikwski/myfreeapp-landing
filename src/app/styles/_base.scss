@@ -41,6 +41,10 @@ body {
     @include main-shadow(rgba(255, 255, 255, 0.7), $primary-200);
 }
 
+.main-shadow-light {
+    @include main-shadow(rgba(255, 255, 255, 0.25), $primary-200);
+}
+
 section {
     min-height: calc(80vh - 150px);
     padding-top: 150px;

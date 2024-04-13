@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
-import { CtaComponent } from './components/cta/cta.component';
-import { FaqComponent } from './components/faq/faq.component';
-import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
-import { OffersComponent } from './components/offers/offers.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './sections/header/header.component';
+import { CtaComponent } from './sections/cta/cta.component';
+import { FaqComponent } from './sections/faq/faq.component';
+import { HowItWorksComponent } from './sections/how-it-works/how-it-works.component';
+import { FooterComponent } from './sections/footer/footer.component';
+import { EarnNowComponent } from './sections/earn-now/earn-now.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CtaComponent,
     FaqComponent,
     HowItWorksComponent,
-    OffersComponent,
+    EarnNowComponent,
     FooterComponent,
     CtaComponent,
   ],
