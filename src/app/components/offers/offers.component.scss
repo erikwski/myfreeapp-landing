@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.ranked-offers {
+    @apply flex flex-col items-center justify-center p-3 pb-0 rounded-xl gap-4 text-center mb-6;
+    background: linear-gradient(180deg, $background, $background-800);
+    @include main-shadow(rgba(255, 255, 255, .25), $primary);
+}

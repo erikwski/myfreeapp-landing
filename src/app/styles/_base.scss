@@ -13,6 +13,10 @@ body {
     background-color: $background;
 }
 
+.bg-primary-700 {
+    background-color: $background-700;
+}
+
 .bg-primary-800 {
     background-color: $background-800;
 }
@@ -38,15 +42,15 @@ body {
 }
 
 section {
-    min-height: calc(100vh - 150px);
+    min-height: calc(80vh - 150px);
     padding-top: 150px;
 
     &#home {
-        min-height: 80vh;
+        min-height: 60vh;
     }
 
     @media screen and (max-width: 900px) {
-        min-height: calc(100vh - 80px);
+        min-height: calc(80vh - 80px);
         padding-top: 80px;
     }
 }
